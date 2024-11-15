@@ -1,0 +1,289 @@
+body {
+    margin: 0px auto;
+}
+
+.header {
+    height: 70px;
+    background: #A3A656;
+}
+
+
+.menu {
+    /* para que se muestre la lista en el centro del div */
+    display: flex;
+
+    float: left;
+    height: 70px;
+    padding: 0px 0px 0px 70px;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu ul li {
+    /* permite que se ubiquen los elementos de la lista en la misma linea */
+    display: inline-block;
+    /* en este caso margin y padding funcionan igual (por apariencia) */
+    /* padding: 0px 20px 0px 0px; */
+    margin: 0px 30px 0px 0px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.cuenta-idioma {
+    float: right;
+    height: inherit;
+    display: inline-flex;
+}
+
+.cuenta {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    display: inline-flex;
+    /* para que los elementos se ubiquen en la misma linea horizontal */
+    flex-direction: row;
+    align-items: center;
+
+    padding: 0px 40px 0px 0px;
+}
+
+.cuenta img{
+    padding: 0px 10px 0px 0px;
+}
+
+.idioma {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.idioma img {
+    padding: 0px 10px 0px 0px;
+}
+
+.idioma .es {
+    padding: 0px 10px 0px 0px;
+}
+
+
+.main {
+    display: flex;
+    position: relative;
+    height: max-content;
+    width: 100%;
+}
+
+
+
+.main img {
+    width: 100%;
+    height: auto;
+}
+
+.main h1{
+    position: absolute;
+    margin: 0px; 
+    padding: 0px;
+    top: 24%;
+    left: 13%;
+}
+
+.main h2 {
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    margin: 0px;
+    padding: 0px;
+    top: 45%;
+    left: 13%;
+    width: 35%;
+}
+
+.reserva {
+    height: 100px;
+    background-color: #F2F6F6;
+    /* padding: 0px; */
+    /* margin: 0px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reserva .input-field{
+    background-color: #FFFFFF;
+    /* width: 200px; */
+    border-radius: 13px;
+    height: 58px;
+    border: none;
+    padding: 0px 10px 0px 10px;
+}
+
+.reserva .input-reserva {
+    width: 275px;
+}
+
+.reserva .input-codigo {
+    width: 200px;
+}
+
+.input-field::placeholder {
+    color: #9E9A9A;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+
+.form-reserva {
+    display: flex;
+    align-items: center;
+}
+
+.form-reserva label {
+    margin: 0px;
+    padding: 0px;
+}
+
+.masajes {
+    height: 600px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.masajes-opciones {
+    margin: 100px 0px 0px 0px;
+    display: flex;
+}
+
+
+.masaje-cont {
+    width: 350px;
+    /* border-radius: 15px 15px 0px 0px; */
+}
+
+.masajes-titulo {
+    color: #FFFFFF;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    background-color: #A3A656;
+    width: 350px;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.masajes-desc {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    width: 350px;
+}
+
+.masajes-footer {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.masajes-precio {
+    color: #000000;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    display: inline-flex;
+}
+.masajes-reservar {
+    font-weight: 600;
+    color: #FFFFFF;
+    border-radius: 35px;
+    background-color: #A3A656;
+    display: inline-flex;
+    padding: 10px
+}
+
+
+.niveles {
+    height: 770px;
+    width: 100%;
+    background-color: #F2F6F6;
+}
+
+
+
+.footer {
+    height: 97px;
+    background-color: #384001;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.menu-footer {
+    /* para que se muestre la lista en el centro del div */
+    display: flex;
+
+    float: left;
+    height: 97px;
+    padding: 0px 0px 0px 70px;
+    align-items: center;
+}
+
+.menu-footer ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu-footer ul li {
+    /* permite que se ubiquen los elementos de la lista en la misma linea */
+    display: inline-block;
+    /* en este caso margin y padding funcionan igual (por apariencia) */
+    /* padding: 0px 20px 0px 0px; */
+    margin: 0px 100px 0px 0px;
+    /* margin: 0px 10px 0px 0px; */
+}
+
+.menu-footer ul li a {
+    text-decoration: none;
+    color: #A3A656;
+}
+
+.redes-sociales {
+    display: flex;
+    height: inherit;
+    align-items: center;
+    float: right;
+    padding: 0px 40px 0px 0px;
+}
+
+.redes-sociales a {
+    margin: 0px 0px 0px 30px;
+}
+
+.siguenos {
+    color: #A3A656;
+}
+
+.romanesco-96 {
+    font-family: "Romanesco", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 96px;
+}
+
+.menu-font {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+  
