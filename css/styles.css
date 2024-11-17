@@ -29,7 +29,7 @@ body {
     display: inline-block;
     /* en este caso margin y padding funcionan igual (por apariencia) */
     /* padding: 0px 20px 0px 0px; */
-    margin: 0px 30px 0px 0px;
+    margin: 0px 20px 0px 0px;
 }
 
 .menu ul li a {
@@ -93,18 +93,19 @@ body {
     position: absolute;
     margin: 0px; 
     padding: 0px;
-    top: 24%;
+    top: 23.5%;
     left: 13%;
 }
 
-.main h2 {
+.main .texto {
     position: absolute;
     font-family: "Inter", sans-serif;
     font-size: 32px;
+    font-weight: 600;
     margin: 0px;
     padding: 0px;
-    top: 45%;
-    left: 13%;
+    top: 44%;
+    left: 12.5%;
     width: 35%;
 }
 
@@ -127,12 +128,21 @@ body {
     padding: 0px 10px 0px 10px;
 }
 
+.reserva .texto-reserva {
+    padding: 0px 30px 0px 0px;
+}
+
+.reserva .texto-codigo {
+    width: 195px;
+    padding: 0px 10px 0px 35px;
+}
+
 .reserva .input-reserva {
-    width: 275px;
+    width: 277px;
 }
 
 .reserva .input-codigo {
-    width: 200px;
+    width: 195px;
 }
 
 .input-field::placeholder {
@@ -153,20 +163,22 @@ body {
 }
 
 .masajes {
-    height: 600px;
+    height: 630px;
     width: 100%;
     background-color: #FFFFFF;
+    box-sizing: content-box;
 }
 
 .masajes-opciones {
-    margin: 100px 0px 0px 0px;
+    padding: 100px 0px 0px 0px;
     display: flex;
+    justify-content: center;
+    gap: 134px;
 }
 
 
 .masaje-cont {
     width: 350px;
-    /* border-radius: 15px 15px 0px 0px; */
 }
 
 .masajes-titulo {
@@ -175,8 +187,8 @@ body {
     font-weight: 600;
     font-size: 32px;
     background-color: #A3A656;
-    width: 350px;
     border-radius: 15px 15px 0px 0px;
+    padding: 21px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,11 +197,10 @@ body {
 .masajes-desc {
     font-family: "Inter", sans-serif;
     font-size: 16px;
-    width: 350px;
+    margin: 14px 0px;
 }
 
 .masajes-footer {
-    width: 350px;
     display: flex;
     justify-content: space-between;
 }
@@ -200,6 +211,7 @@ body {
     font-weight: 600;
     font-size: 32px;
     display: inline-flex;
+    padding-left: 13px;
 }
 .masajes-reservar {
     font-weight: 600;
@@ -207,7 +219,7 @@ body {
     border-radius: 35px;
     background-color: #A3A656;
     display: inline-flex;
-    padding: 10px
+    padding: 13px 35px;
 }
 
 
@@ -215,6 +227,75 @@ body {
     height: 770px;
     width: 100%;
     background-color: #F2F6F6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.niveles-titulo {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    padding: 35px 0px 0px 0px;
+}
+
+.niveles-opciones {
+    display: flex;
+    justify-content: center;
+    gap: 160px;
+    padding: 80px 0px 0px 0px;
+}
+
+.nivel-cont {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nivel-icono {
+    border-radius: 50%;
+    border: 10px solid #384001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 233px;
+    height: 233px;
+    background-color: #FFFFFF;
+}
+
+.nivel-titulo {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nivel-boton {
+    color: #FFFFFF;
+    background-color: #A3A656;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: 600;
+    height: 60px;
+    width: 100%;
+    margin: 35px 0px 0px 0px;
+}
+
+.nivel-beneficios ul {
+    margin: 25px 0px 0px 0px;
+}
+
+.nivel-beneficios li {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    margin: 0px 0px 10px 0px;
 }
 
 
@@ -285,5 +366,17 @@ body {
     font-size: 16px;
     font-style: normal;
     text-transform: uppercase;
+}
+
+.menu-footer ul li a:hover, .menu ul li a:hover {
+    color: #FFFF00;
+}
+
+.menu-footer ul li a:hover {
+    color: #FFFF00;
+}
+
+.nivel-boton:hover, .masajes-reservar:hover {
+    background-color: #384001;
 }
   
